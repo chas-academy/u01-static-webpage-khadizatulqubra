@@ -1,0 +1,339 @@
+
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+}
+#resume-box{
+  display: flex;
+  flex-direction: row;
+}
+a {
+  color:  rgb(18, 18, 18);
+  text-decoration: none;
+  font-size: 20px;
+  padding-bottom: 20px;
+ 
+}
+
+.bold {
+  color:  #616566;
+  font-weight: 600;
+  font-size: 30px;
+}
+.name-wrapper h1  { 
+  font-size: 25px;
+  text-align: center;
+}
+.name-wrapper h2{
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.resume-wrapper  {
+  
+  background-color: rgb(79, 106, 120);
+
+  width: 100%;
+  height: 250vh;
+  padding: 20px 20px; 
+}
+
+.img{
+  width: 80%;
+  height: 200px;
+  object-fit: cover;
+  padding-left: 10px;
+  margin-left: 20px;
+  border-radius: 200%;
+ 
+  
+}
+.contact{
+  display: flex;
+  list-style-type: none;
+  border-bottom: 2px solid black;
+  border-top:  2px solid black;;
+  
+  
+}
+li{
+  list-style: none;
+}
+.list-titles{
+  font-size: 20px;
+  font-weight: 600;
+ 
+}
+.list-content{
+  font-size: 20px;
+  border-bottom: 2px solid black;
+}
+.Social-Contact{
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding: 20px;
+}
+.fa-brands{
+  padding: 10px;
+  transition:transform 0.5s; ;
+  color: rgb(27, 28, 28);
+ 
+
+}
+.fa-brands:hover {
+  transform: translateY(-10px);
+}
+.Interests{
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding: 20px;
+}
+.Interests h2{
+  font-size: 25px;
+  border-bottom: 2px solid black;
+}
+
+.experience.section-padding{
+  
+ 
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 20px;
+  width: 100%;
+  height: 200vh;
+
+
+}
+.presentation{
+  background-color: rgb(211, 215, 216);
+
+  padding: 20px 20px;
+  width: 100%;
+
+  
+}
+.presentation h2{
+  font-size: 30px;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  color: rgb(88, 91, 92); 
+}
+
+   .container{
+      display: flex;
+      flex-direction: row;
+     
+   }
+
+
+   .contain-box{
+    display: block;
+    width: 80%;
+    height: auto;
+    padding: 5px;
+   
+      
+    
+   }
+   .box-1 {
+    background-color: rgb(211, 215, 216);
+    margin-top: 20px;
+    width: 125%;
+    padding: 20px 0px;
+
+   }
+   
+   .box-2{
+    background-color: rgb(211, 215, 216);
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px 0px;
+
+   }
+   .box-3{
+    background-color: rgb(211, 215, 216);
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px ;
+
+   }
+   .box-3 h3{
+    padding-left:10px ;
+    font-weight: bold;
+   }
+   .box-4{
+    background-color: rgb(211, 215, 216);
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 10px;
+
+   }
+   
+   #company{
+      font-size: 15px;
+      font-weight: 600;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 40px 0px;
+   }
+   #company td #company th{
+      padding: 10px;
+      border: #616566 1px solid;
+
+
+   }
+    #company th{
+        padding-top: 10px;
+        border: #616566 1px solid;
+        text-align: left;
+        background-color: rgb(119, 126, 128);
+      padding-bottom: 12px;}
+      #company td{
+        padding-top: 10px;
+        border: #616566 1px solid;
+        text-align: left;
+        background-color: rgb(211, 215, 216);}
+
+
+     .box-1 h3{ 
+      color:rgb(69, 85, 91);
+     font-size: 15px;
+     font-weight: bolder;
+     text-transform: uppercase;
+     margin-top: 0px;
+     text-align:top;
+     padding-left: 10px;
+     position: absolute;
+     }
+     .experience-wrapper{
+      padding-top: 70px;
+    padding-left: 20px;
+   
+   
+  }
+  .experience-title{ font-weight: 800;
+    color:rgb(69, 85, 91);
+    font-size: 18px;
+    text-decoration: underline;
+    font-style: italic;
+
+  }
+  .time{
+    font-weight: bold;
+    color:rgb(69, 85, 91);
+    text-decoration: underline;
+  }
+  #education{
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  #education h2{
+   font-size: 18px;
+    color:rgb(69, 85, 91);
+    text-decoration: underline;
+    font-style: italic;
+
+  }
+  .section-title{
+    font-weight: 800;
+    color:rgb(69, 85, 91);
+    font-size: 18px;
+    position: relative;
+    text-decoration: underline;
+    font-style: italic;
+    
+
+  }
+  
+  .section-hobbies{
+    color:rgb(69, 85, 91);
+    font-style: italic;
+    text-decoration: underline;
+
+  }
+  .hobbies{
+   padding: 10px 10px;
+   color: #000;
+   font-size: 15px;
+   
+
+  
+  }
+
+  /* media for small screen */
+  @media only screen and (max-width:600px){
+    .container{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      
+    }
+    .contain-box{
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 5px;
+     
+    }
+   .resume-wrapper
+    {
+      
+      width: 100%;
+      height: 350vw;
+    }
+    .presentation{
+      width: 100%;
+    }
+    .box-1 {
+      background-color: rgb(211, 215, 216);
+      height: 100%;
+      width: 100%;
+      padding: 20px 0px;
+  
+     }
+     
+     .box-2{
+      background-color: rgb(211, 215, 216);
+      width: 100%;
+      padding: 10px 0px;
+  
+     }
+     .box-3{
+      background-color: rgb(211, 215, 216);
+      margin-top: 20px;
+      width: 100%;
+      padding: 20px 0px;
+  
+     }
+     .box-4{
+      background-color: rgb(211, 215, 216);
+      margin-top: 20px;
+      width: 100%;
+      padding: 20px 0px;
+  
+     }
+    }
+
+
+      
+    
+    
+
+    
+
