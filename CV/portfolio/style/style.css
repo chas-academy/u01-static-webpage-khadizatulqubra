@@ -1,0 +1,581 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
+
+/*  <!-- first section (navbar and logo) start here  --> */
+.home {
+  height: 90vh;
+  width: 100%;
+  margin-right: 100px;
+
+}
+
+.home nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  flex-wrap: wrap;
+  background-color: #343030;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+.home nav ul {
+  float: right;
+  margin: 10px;
+}
+
+.home nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 14px;
+}
+
+.home nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: large;
+  font-size: 15px;
+}
+
+.home nav a:hover {
+  color: rgb(201, 13, 110);
+}
+
+.home nav .butn {
+  background-color: rgb(201, 13, 110);
+  color: rgb(234, 234, 234);
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 5px 0;
+  transition: width 2s linear 1s;
+}
+
+.home nav .butn:hover {
+  text-align: center;
+  width: 200px;
+  color: rgb(32, 31, 31);
+}
+
+.home nav .logo1 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.home nav .logo1 span {
+  color: rgb(201, 13, 110);
+  font-size: 30px;
+}
+
+.animate {
+  background-image: -webkit-linear-gradient(rgb(205, 40, 142) 50%, rgb(91, 224, 46) 50%);
+  background-size: 100% 50px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: stripes 2s linear infinite;
+  animation: stripes 2s linear infinite;
+}
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+.name {
+  position: absolute;
+  top: 40%;
+  left: 6%;
+}
+
+.name span {
+  color: rgb(201, 13, 110);
+  font-size: 6vw;
+}
+
+h1 h3 {
+  font-size: 6vw;
+}
+
+h4 {
+  color: rgb(201, 13, 110);
+  letter-spacing: 1px;
+  font-size: 6vw;
+}
+/*  <!-- first section (navbar and logo) end here  --> */
+/* <!-- second section personal summary start here --> */
+#second {
+  padding-top: 20px;
+  color: #fff;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.row-1 {
+  flex-basis: 40%;
+}
+
+.row-1 img {
+  padding: 10px 10px;
+  width: 90%;
+  transition: transform 0.5s;
+  border-radius: 50px;
+}
+
+.row-1 img:hover {
+  transform: translateY(-20px);
+}
+
+.row-2 {
+  flex-basis: 60%;
+  padding-top: 10vw;
+  padding-right: 10vw;
+  text-align: center;
+}
+
+.summary-header {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(201, 13, 110);
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.click a {
+  background-color: rgb(201, 13, 110);
+  color: aliceblue;
+  text-decoration: none;
+  border: 1px solid transparent;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 15px;
+}
+
+.click a:hover {
+  color: rgb(27, 22, 22);
+}
+
+p {
+  margin-bottom: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+/* <!-- second section personal summary end here --> */
+
+/* Service menustart below */
+#service {
+  padding: 20px 0;
+}
+
+.service-list {
+  display: flex;
+  background-color: transparent;
+  padding: 10px;
+  margin-right: 2px;
+  justify-content: space-around;
+  
+}
+
+.service-title {
+  text-align: center;
+  color: rgb(201, 13, 110);
+  padding-bottom: 2vw;
+}
+
+.service-item {
+  background-color: black;
+  border: 1px solid rgb(201, 13, 110);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 40px;
+  width: 20rem;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.service-item:hover {
+  background-color: rgb(201, 13, 110);
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+
+h2 {
+  color: rgb(156, 146, 148);
+}
+
+.service-item a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid transparent;
+  padding: 2px 4px;
+  border-radius: 5px;
+  height: 4px;
+  background-color: rgb(150, 142, 144);
+  font-weight: bold;
+}
+
+/* Service menu end here */
+
+/* work side/video inbad start below  */
+#work {
+  padding: 20px 10px;
+}
+
+.work-title {
+  text-align: center;
+  padding-top: 40px;
+  color: rgb(201, 13, 110);
+}
+
+.work-list {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.video-wrap-1st {
+  padding: 10px 10px;
+  flex-basis: 50px;
+}
+
+.video-wrap-2nd {
+  padding: 10px 10px;
+  flex-basis: 50px;
+}
+
+/* work side/video inbad end  */
+
+
+/* contact formular start below */
+.contact-left {
+  flex-basis: 60%;
+  margin: 20px 20px;
+}
+
+.contact-right {
+  flex-basis: 20%;
+}
+
+#contact-form {
+  display: flex;
+}
+
+.my-contact {
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.my-contact p i {
+  color: rgb(201, 13, 110);
+  padding-right: 2px;
+}
+
+.my-contact h1 {
+  color: rgb(201, 13, 110);
+  padding-top: 100px;
+}
+
+.animate1 {
+  background-image: -webkit-linear-gradient(rgb(203, 14, 131) 50%, rgb(243, 242, 244) 50%);
+  background-size: 100% 50px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: stripes 2s linear infinite;
+  animation: stripes 2s linear infinite;
+  font-size: 20px;
+}
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+.fa-brands {
+  color: rgb(209, 200, 203) !important;
+  font-size: 40px;
+  transition: transform 0.5s;
+  padding-right: 6px;
+}
+
+.fa-brands:hover {
+  transform: translateY(-10px);
+}
+
+.contact-left input {
+  font-size: 20px;
+  display: block;
+  border: none;
+  width: 30vw;
+  height: 3vw;
+  background-color: rgb(48, 46, 46);
+  font-weight: bold;
+  color: rgb(118, 114, 114);
+  border-radius: 4px;
+}
+
+.contact-left textarea {
+  font-size: 20px;
+  border: none;
+  width: 30vw;
+  height: 15vw;
+  margin-bottom: 2rem;
+  background-color: rgb(48, 45, 45);
+  font-weight: bold;
+  border-radius: 4px;
+  color: #fff;
+}
+
+button {
+  background: rgb(201, 13, 110);
+}
+
+.contact-left h2 {
+  padding: 6px 2px;
+  color: rgb(201, 13, 110);
+}
+
+/* contact formular end here */
+/* footer start */
+footer {
+  text-align: center;
+  margin: 2vw;
+  font-size: 15px;
+  padding: 2vw;
+  color: rgb(135, 129, 129);
+}
+
+footer i {
+  padding-right: 4px;
+}
+
+/* footer end */
+
+/* Media screen for nav */
+
+/*# sourceMappingURL=style.css.map */
+/* Media screen for small screen */
+
+
+
+@media only screen and (max-width:600px) {
+
+  .home {
+    margin-top: 0%;
+    margin-right: 0%;
+    width: 100%;
+
+  }
+
+  .logo1 {
+    font-size: 10px;
+    padding: 0;
+    margin: 0px;
+  }
+
+  span {
+    font-size: 20px;
+  }
+
+  .name {
+    position: absolute;
+
+    right: 20%;
+    font-size: 15px;
+    width: 80%;
+    text-align: center;
+    bottom: 0%;
+  }
+
+  .name span {
+    font-size: 20px;
+  }
+
+  h1 h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 20px;
+
+  }
+
+  nav {
+    margin: 0;
+    width: 100%;
+  }
+
+  nav ul {
+    position: fixed;
+    background-color: rgb(228, 24, 92);
+    top: 0px;
+    right: 0;
+    width: 140px;
+    right: -150px;
+    height: 100vh;
+    padding-top: 20px;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+
+
+
+  }
+
+  nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  #second {
+    padding-top: 0px;
+    color: #fff;
+    font-size: 30px;
+
+  }
+
+  .row-1,
+  .row-2 {
+    flex-basis: 100%;
+
+  }
+
+  .row-1 img {
+    width: 100%;
+    padding: 10px 10px;
+    transition: transform 0.5s;
+    border-radius: 50px;
+    top: 0px;
+    margin: 0px;
+  }
+
+  .row-2 {
+    padding-top: 0px;
+    padding-right: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .row-2 a {
+    font-size: 20px;
+  }
+
+  .service-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+
+  }
+
+  .service-list {
+    flex-direction: column;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    font-size: 20px;
+    align-items: center;
+
+
+
+  }
+
+  .work-list {
+    flex-direction: column;
+    margin: 10px 20px;
+    padding: 20px 20px;
+    align-items: center;
+
+  }
+
+  #contact-form {
+    flex-direction: column;
+    margin: 10px 20px;
+    padding: 20px 20px;
+    align-items: center;
+
+  }
+
+  .contact-left input {
+    font-size: 20px;
+    display: block;
+    border: none;
+    width: 60vw;
+    height: 8vw;
+
+  }
+
+  .contact-left textarea {
+    font-size: 20px;
+    border: none;
+    width: 60vw;
+    height: 25vw;
+    margin-bottom: 2rem;
+    background-color: rgb(48, 45, 45);
+    font-weight: bold;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+
+
+}
