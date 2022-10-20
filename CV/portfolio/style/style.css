@@ -12,37 +12,35 @@ body {
 
 /*  <!-- first section (navbar and logo) start here  --> */
 .home {
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   margin-right: 100px;
 
 }
 
-.home nav {
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px;
   flex-wrap: wrap;
-  background-color: #343030;
+  background-color: #6c68683e;
 }
 
-nav .fa-solid {
-  display: none;
-}
-
-.home nav ul {
+ nav ul {
   float: right;
   margin: 10px;
+ 
+  
 }
 
-.home nav li {
+nav li {
   list-style: none;
   display: inline-block;
   padding: 10px 14px;
 }
 
-.home nav a {
+ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -51,11 +49,13 @@ nav .fa-solid {
   font-size: 15px;
 }
 
-.home nav a:hover {
+
+
+ nav a:hover {
   color: rgb(201, 13, 110);
 }
 
-.home nav .butn {
+ nav .butn {
   background-color: rgb(201, 13, 110);
   color: rgb(234, 234, 234);
   text-decoration: none;
@@ -67,13 +67,23 @@ nav .fa-solid {
   transition: width 2s linear 1s;
 }
 
-.home nav .butn:hover {
+ nav .butn:hover {
   text-align: center;
   width: 200px;
-  color: rgb(32, 31, 31);
+  color: #fff;
+  background-color: transparent;
 }
 
-.home nav .logo1 {
+#check {
+  display: none;
+}
+.check-btn{
+  font-size: 40px;
+  color: rgb(243, 50, 159);
+  display: none;
+}
+
+ nav .logo1 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   letter-spacing: 1px;
@@ -81,57 +91,86 @@ nav .fa-solid {
   font-weight: bold;
 }
 
-.home nav .logo1 span {
+ nav .logo1 span {
   color: rgb(201, 13, 110);
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .animate {
-  background-image: -webkit-linear-gradient(rgb(205, 40, 142) 50%, rgb(91, 224, 46) 50%);
-  background-size: 100% 50px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-animation: stripes 2s linear infinite;
-  animation: stripes 2s linear infinite;
+  font-size: 10px;
+
+  animation-name: moveInright;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
 }
 
-@-webkit-keyframes stripes {
+@keyframes moveInright {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(50px);
+  }
+
   100% {
-    background-position: 0 -50px;
+    opacity: 0.8;
+    transform: translate(0);
   }
 }
 
-@keyframes stripes {
+@keyframes moveInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(50px);
+  }
+
   100% {
-    background-position: 0 -50px;
+    opacity: 0.8;
+    transform: translate(0);
   }
 }
+
 
 .name {
   position: absolute;
-  top: 40%;
-  left: 6%;
+  top: 30%;
+  left: 20%;
+  height: 100vh;
+  animation-name: moveInleft;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
 }
 
 .name span {
   color: rgb(201, 13, 110);
-  font-size: 6vw;
+  font-size: 4vw;
 }
 
 h1 h3 {
-  font-size: 6vw;
+  font-size: 4vw;
 }
 
 h4 {
   color: rgb(201, 13, 110);
   letter-spacing: 1px;
-  font-size: 6vw;
+  font-size: 4vw;
 }
+
 /*  <!-- first section (navbar and logo) end here  --> */
 /* <!-- second section personal summary start here --> */
 #second {
   padding-top: 20px;
   color: #fff;
+  background-color: #1b1919;
+  height: 100vh;
 }
 
 .summary {
@@ -145,10 +184,11 @@ h4 {
 }
 
 .row-1 img {
-  padding: 10px 10px;
-  width: 90%;
+  padding: 30px 10px;
+  width: 70%;
   transition: transform 0.5s;
-  border-radius: 50px;
+  border-radius: 10%;
+  height: 100%;
 }
 
 .row-1 img:hover {
@@ -195,6 +235,7 @@ p {
 /* Service menustart below */
 #service {
   padding: 20px 0;
+  background-color: #020202;
 }
 
 .service-list {
@@ -203,7 +244,7 @@ p {
   padding: 10px;
   margin-right: 2px;
   justify-content: space-around;
-  
+
 }
 
 .service-title {
@@ -213,7 +254,7 @@ p {
 }
 
 .service-item {
-  background-color: black;
+  background-color: rgb(23, 22, 22);
   border: 1px solid rgb(201, 13, 110);
   padding: 20px;
   font-size: 30px;
@@ -250,6 +291,7 @@ h2 {
 /* work side/video inbad start below  */
 #work {
   padding: 20px 10px;
+  background-color: #262424;
 }
 
 .work-title {
@@ -407,18 +449,86 @@ footer i {
 
   .logo1 {
     font-size: 10px;
-    padding: 0;
-    margin: 0px;
+    padding: 10px 20px;
+    margin:10px;
+    
   }
 
   span {
     font-size: 20px;
   }
 
+ 
+
+  nav {
+    margin: 0;
+    width: 100%;
+  }
+
+ 
+
+  nav ul li {
+    display: block;
+    margin: 20px 0px;
+    padding: 10px 20px;
+
+
+  }
+
+  nav ul li a {
+    color: rgb(235, 53, 129);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 5px;
+   
+   
+  }
+  
+  
+  .check-btn {
+    position: relative;
+    right:10px;
+    cursor: pointer;
+    font-size: 30px;
+    display: block;
+    
+  }
+  #check{
+    display: none;}
+  
+   ul {
+    position: fixed;
+    background-color: rgb(104, 94, 97);
+    opacity: 0.7;
+    top:80px;
+    width: 60%;
+    left: 50%;
+    height: 100vh;
+    padding-top: 30px;
+    text-align: center;
+    transition: all 0.5s;
+    display: block;
+    
+  }
+  #check:checked~ ul { 
+    right:50%;
+  
+   
+  }
+
+  .butn{
+    position: absolute;
+
+   left: 200px;
+   font-size: 10px;
+  }
+
   .name {
     position: absolute;
 
-    right: 20%;
+    left: 10%;
     font-size: 15px;
     width: 80%;
     text-align: center;
@@ -426,7 +536,7 @@ footer i {
   }
 
   .name span {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   h1 h3 {
@@ -437,57 +547,7 @@ footer i {
     font-size: 40px;
   }
 
-  nav .fa-solid {
-    display: block;
-    font-size: 20px;
-
-  }
-
-  nav {
-    margin: 0;
-    width: 100%;
-  }
-
-  nav ul {
-    position: fixed;
-    background-color: rgb(228, 24, 92);
-    top: 0px;
-    right: 0;
-    width: 140px;
-    right: -150px;
-    height: 100vh;
-    padding-top: 20px;
-    text-align: center;
-    transition: all 0.5s;
-    z-index: 2;
-    transition: right 0.5s;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 20px 0;
-    padding: 10px 20px;
-
-
-
-  }
-
-  nav ul li a {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 0.5s;
-  }
-
-  nav ul .fa-solid {
-    position: absolute;
-    top: 20px;
-    cursor: pointer;
-    padding: 10px;
-  }
-
+/* Home section end */
   #second {
     padding-top: 0px;
     color: #fff;
@@ -524,7 +584,9 @@ footer i {
   .service-title {
     font-size: 30px;
     margin-bottom: 20px;
+    margin-top: 50vh;
     color: #fff;
+    padding-bottom: 20px;
 
   }
 
@@ -534,6 +596,7 @@ footer i {
     padding: 20px 20px;
     font-size: 20px;
     align-items: center;
+    
 
 
 
@@ -544,6 +607,8 @@ footer i {
     margin: 10px 20px;
     padding: 20px 20px;
     align-items: center;
+    background-color: #fff;
+   
 
   }
 
