@@ -3,97 +3,104 @@
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
+
 }
 
 body {
   background: #000000;
   color: rgb(255, 255, 255);
+
 }
 
 /*  <!-- first section (navbar and logo) start here  --> */
-.home {
-  height: 80vh;
+#first {
   width: 100%;
-  margin-right: 100px;
-
+  height: 100vh;
 }
+
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 20px;
-  flex-wrap: wrap;
-  background-color: #6c68683e;
+  background-color: #050505;
+  height: 110px;
+  width: 100%;
+  padding: 10px;
+
+
 }
 
- nav ul {
+nav ul {
   float: right;
-  margin: 10px;
- 
-  
+  margin-right: 20px;
+
 }
 
-nav li {
-  list-style: none;
+nav ul li {
+
   display: inline-block;
-  padding: 10px 14px;
+  padding: 10px 10px 30px 10px;
+
+
+
 }
 
- nav a {
+nav ul li a {
   color: white;
-  text-decoration: none;
   font-weight: bold;
   text-transform: capitalize;
   font-size: large;
   font-size: 15px;
+  text-decoration: none;
 }
 
 
 
- nav a:hover {
+nav ul li a:hover {
   color: rgb(201, 13, 110);
 }
 
- nav .butn {
-  background-color: rgb(201, 13, 110);
-  color: rgb(234, 234, 234);
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 10px;
-  margin: 5px 0;
-  transition: width 2s linear 1s;
-}
 
- nav .butn:hover {
-  text-align: center;
-  width: 200px;
-  color: #fff;
-  background-color: transparent;
-}
 
 #check {
   display: none;
 }
-.check-btn{
+
+.check-btn {
   font-size: 40px;
   color: rgb(243, 50, 159);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
   display: none;
 }
 
- nav .logo1 {
-  color: rgb(255, 255, 255);
+.logo1 {
+  color: rgb(238, 230, 235);
   font-size: 20px;
   letter-spacing: 1px;
   cursor: pointer;
   font-weight: bold;
 }
 
- nav .logo1 span {
+.logo1 span {
   color: rgb(201, 13, 110);
-  font-size: 20px;
+  font-size: 40px;
+}
+
+
+.name {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  height: 100vh;
+  animation-name: moveInleft;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 40px;
 }
 
 .animate {
@@ -137,55 +144,64 @@ nav li {
   }
 }
 
-
-.name {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  height: 100vh;
-  animation-name: moveInleft;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
-  animation-delay: 2s;
-}
-
-.name span {
-  color: rgb(201, 13, 110);
-  font-size: 4vw;
-}
-
-h1 h3 {
-  font-size: 4vw;
-}
-
 h4 {
-  color: rgb(201, 13, 110);
+  color: rgb(215, 14, 118);
   letter-spacing: 1px;
   font-size: 4vw;
+  position: relative;
+  left: 20%;
+  top: 100%;
+}
+
+h3 {
+  position: relative;
+  left: 20%;
+  top: 10%;
+}
+
+.cv a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1vw;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 1px solid rgb(201, 13, 110);
+  background-color: rgb(201, 13, 110);
+  border-radius: 10px;
+  margin: 30px 40px;
+  position: relative;
+  top: 0%;
+  left: 10%;
+}
+
+video {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
 }
 
 /*  <!-- first section (navbar and logo) end here  --> */
 /* <!-- second section personal summary start here --> */
 #second {
-  padding-top: 20px;
   color: #fff;
-  background-color: #1b1919;
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(73, 70, 72, 0.315));
   height: 100vh;
-}
-
-.summary {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+
+
 }
 
+
 .row-1 {
-  flex-basis: 40%;
+  flex-basis: 60%;
 }
 
 .row-1 img {
   padding: 30px 10px;
   width: 70%;
+  height: 50%;
   transition: transform 0.5s;
   border-radius: 10%;
   height: 100%;
@@ -206,8 +222,8 @@ h4 {
   font-size: 50px;
   font-weight: bold;
   color: rgb(201, 13, 110);
-  margin-left: 5px;
-  padding: 5px;
+  margin-right: 80px;
+  padding-bottom: 100px;
 }
 
 .click a {
@@ -236,6 +252,7 @@ p {
 #service {
   padding: 20px 0;
   background-color: #020202;
+  width: 100%;
 }
 
 .service-list {
@@ -251,6 +268,7 @@ p {
   text-align: center;
   color: rgb(201, 13, 110);
   padding-bottom: 2vw;
+  padding-left: 10px;
 }
 
 .service-item {
@@ -265,7 +283,7 @@ p {
 }
 
 .service-item:hover {
-  background-color: rgb(201, 13, 110);
+  background-image: linear-gradient(black, rgb(219, 48, 154));
   transform: translateY(-20px);
   cursor: pointer;
 }
@@ -292,6 +310,7 @@ h2 {
 #work {
   padding: 20px 10px;
   background-color: #262424;
+  width: 100%;
 }
 
 .work-title {
@@ -431,127 +450,103 @@ footer i {
 
 /* footer end */
 
-/* Media screen for nav */
 
-/*# sourceMappingURL=style.css.map */
+
+
 /* Media screen for small screen */
 
 
-
 @media only screen and (max-width:600px) {
-
-  .home {
-    margin-top: 0%;
-    margin-right: 0%;
+  /* Media screen for nav */
+  #first {
     width: 100%;
-
+    height: 100vh;
   }
 
   .logo1 {
-    font-size: 10px;
+    font-size: 20px;
     padding: 10px 20px;
-    margin:10px;
-    
+    margin: 10px;
+
   }
 
   span {
-    font-size: 20px;
+    font-size: 10px;
   }
 
- 
 
-  nav {
-    margin: 0;
-    width: 100%;
+  .check-btn {
+    display: block;
   }
 
- 
+  nav ul {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background-color: rgb(213, 24, 137);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+  }
 
   nav ul li {
     display: block;
-    margin: 20px 0px;
-    padding: 10px 20px;
-
+    margin: 20px 0;
+    line-height: 30px;
 
   }
 
   nav ul li a {
-    color: rgb(235, 53, 129);
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 20px 5px;
-   
-   
-  }
-  
-  
-  .check-btn {
-    position: relative;
-    right:10px;
-    cursor: pointer;
-    font-size: 30px;
     display: block;
-    
-  }
-  #check{
-    display: none;}
-  
-   ul {
-    position: fixed;
-    background-color: rgb(104, 94, 97);
-    opacity: 0.7;
-    top:80px;
-    width: 60%;
-    left: 50%;
-    height: 100vh;
-    padding-top: 30px;
-    text-align: center;
-    transition: all 0.5s;
-    display: block;
-    
-  }
-  #check:checked~ ul { 
-    right:50%;
-  
-   
+    color: rgb(15, 14, 14);
   }
 
-  .butn{
-    position: absolute;
-
-   left: 200px;
-   font-size: 10px;
+  #check:checked~ul {
+    left: 0%;
   }
+
 
   .name {
     position: absolute;
-
+    top: 25%;
     left: 10%;
-    font-size: 15px;
     width: 80%;
     text-align: center;
     bottom: 0%;
   }
 
-  .name span {
-    font-size: 30px;
+  .name h1 {
+    position: relative;
+    left: 5%;
+    font-size: 15px;
   }
 
-  h1 h3 {
-    font-size: 20px;
+  .name h3 {
+    position: relative;
+    left: 10%;
+    font-size: 10px;
   }
 
   h4 {
-    font-size: 40px;
+    position: relative;
+    left: 5%;
+    font-size: 30px;
   }
 
-/* Home section end */
+  .cv a {
+    position: relative;
+    top: 20%;
+    left: 5%;
+    font-size: 10px;
+  }
+
+  /* Home section end */
   #second {
     padding-top: 0px;
     color: #fff;
     font-size: 30px;
+    display: flex;
+    flex-direction: column;
 
   }
 
@@ -574,17 +569,18 @@ footer i {
     padding-top: 0px;
     padding-right: 0px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   .row-2 a {
     font-size: 20px;
   }
 
+  /* service section */
   .service-title {
     font-size: 30px;
     margin-bottom: 20px;
-    margin-top: 50vh;
+    margin-top: 10vh;
     color: #fff;
     padding-bottom: 20px;
 
@@ -596,9 +592,6 @@ footer i {
     padding: 20px 20px;
     font-size: 20px;
     align-items: center;
-    
-
-
 
   }
 
@@ -608,7 +601,7 @@ footer i {
     padding: 20px 20px;
     align-items: center;
     background-color: #fff;
-   
+
 
   }
 
